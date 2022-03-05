@@ -42,6 +42,9 @@
     left: 0;
     bottom: -1px;
     border-radius: 2px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      bottom: -2px;
+    }
   }
 }
 .contacts {
