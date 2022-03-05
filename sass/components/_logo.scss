@@ -1,0 +1,33 @@
+.logo {
+  font-family: 'Raleway', sans-serif;
+  @include font(700, 26px, 1.2, null);
+  text-decoration: none;
+  @media screen and (max-width: 1199px) {
+    @include font(700, 24px, 1.16, 0.03em);
+  }
+}
+.logo-header {
+  color: var(--accent-color);
+  padding: 16px 0;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    padding: 26px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 24px 0;
+    margin-right: 93px;
+  }
+}
+.logo--dark-color {
+  color: var(--title-text-color);
+}
+.logo-footer {
+  display: flex;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.logo--light-color {
+  color: var(--primary-white-color);
+}
