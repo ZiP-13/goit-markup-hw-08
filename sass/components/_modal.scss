@@ -33,7 +33,6 @@
 .modal__title {
   margin-bottom: 12px;
   text-align: center;
-  // @include font(700, 20px, 1.15, 0.03em);
   @include font(700, 20px, 1.5, null);
   color: var(--title-text-color);
   @media screen and (min-width: 1200px) {
@@ -112,7 +111,6 @@
   align-items: flex-end;
   justify-content: center;
   @include font(null, 12px, 1.16, null);
-  // line-height: 1;
   @media screen and (min-width: 1200px) {
     @include font(null, 14px, 1, null);
   }

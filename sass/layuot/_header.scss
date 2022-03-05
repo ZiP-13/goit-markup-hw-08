@@ -96,6 +96,16 @@
   margin-right: 10px;
   fill: currentColor;
 }
+.mob-menu {
+  transition: opacity 600ms, visibility 600ms;
+}
+.mob-menu.is-hidden .menu {
+  transform: rotate(180deg) scale(0.1);
+}
+.menu {
+  transform: rotate(0) scale(1);
+  transition: 600ms;
+}
 .menu-btn {
   position: absolute;
   top: 10px;
@@ -116,6 +126,7 @@
     display: none;
   }
 }
+
 .mob-menu {
   position: fixed;
   z-index: 1;

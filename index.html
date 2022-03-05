@@ -60,14 +60,15 @@
         </button>
       </div>
       <div class="mob-menu is-hidden" data-menu>
-        <div class="container">
+        <button type="button" class="menu-btn" data-menu-close>
+          <svg class="menu-close" width="18" height="18">
+            <use href="img/icons.svg#icon-menu-close">
+            </use>
+          </svg>
+        </button>
+        <div class="container menu">
           <div class="mob-menu-top">
-            <button type="button" class="menu-btn" data-menu-close>
-              <svg class="menu-close" width="18" height="18">
-                <use href="img/icons.svg#icon-menu-close">
-                </use>
-              </svg>
-            </button>
+            
             <ul class="mob-menu__list list">
               <li class="mob-menu__item">
                 <a class="mob-menu__link" href="./index.html">Студия</a>
@@ -170,19 +171,40 @@
         <ul class="work__list list">
           <li class="work__item">
             <div class="work__tumb">
-              <img src="img/index/section_3/section3-1.jpg" alt="Планирование работы" width="370" height="294" />
+              <img 
+              srcset="
+                ./img/index/work/work-desk-1.jpg 1x,
+                ./img/index/work/work-desk-1-2x.jpg 2x
+              "
+              src="img/index/section_3/section3-1.jpg" 
+              alt="Планирование работы" 
+              width="370" height="294" />
               <p class="work__text">Десктопные приложения</p>
             </div>
             </li>
           <li class="work__item">
             <div class="work__tumb">
-              <img src="img/index/section_3/section3-2.jpg" alt="Работа с уведомлениями" width="370" height="294" />
+              <img 
+              srcset="
+                ./img/index/work/work-desk-2.jpg 1x,
+                ./img/index/work/work-desk-2-2x.jpg 2x
+              "
+              src="img/index/section_3/section3-2.jpg" 
+              alt="Работа с уведомлениями" 
+              width="370" height="294" />
               <p class="work__text">Мобильные приложения</p>
             </div>
           </li>
           <li class="work__item">
             <div class="work__tumb">
-              <img src="img/index/section_3/section3-3.jpg" alt="Оптимизация рабочего графика" width="370" height="294" />
+              <img 
+              srcset="
+                ./img/index/work/work-desk-3.jpg 1x,
+                ./img/index/work/work-desk-3-2x.jpg 2x
+              "
+              src="img/index/section_3/section3-3.jpg" 
+              alt="Оптимизация рабочего графика" 
+              width="370" height="294" />
               <p class="work__text">Дизайнерские решения</p>
             </div>
           </li>
@@ -195,7 +217,33 @@
           <h2 class="team title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img class="team__img" src="img/index/section_4/section4-1.jpg" alt="Работник компании" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/index/team/team-desk-1.jpg 1x,
+                    ./img/index/team/team-desk-1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source 
+                  srcset="
+                    ./img/index/team/team-tab-1.jpg 1x,
+                    ./img/index/team/team-tab-1-2x.jpg 2x
+                  " 
+                  media="(min-width: 768px)" 
+                />
+                <source 
+                  srcset="
+                    ./img/index/team/team-mob-1.jpg 1x,
+                    ./img/index/team/team-mob-1-2x.jpg 2x
+                  " 
+                  media="(min-width: 320px)" 
+                />
+                <img src="img/index/team/team-desk-1.jpg" 
+                alt="Работник компании" 
+                />
+              </picture>
+              
               <div class="team__content">
               <h3 class="team__name">Игорь Демьяненко</h3>
               <p lang="en" class="team__prof">Product Designer</p>
@@ -236,7 +284,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="img/index/section_4/section4-2.jpg" alt="Работник компании" width="270" height="260" />
+              <picture>
+                <source srcset="
+                  ./img/index/team/team-desk-2.jpg 1x,
+                  ./img/index/team/team-desk-2-2x.jpg 2x
+                " media="(min-width: 1200px)" />
+                <source srcset="
+                  ./img/index/team/team-tab-2.jpg 1x,
+                  ./img/index/team/team-tab-2-2x.jpg 2x
+                " media="(min-width: 768px)" />
+                <source srcset="
+                  ./img/index/team/team-mob-2.jpg 1x,
+                  ./img/index/team/team-mob-2-2x.jpg 2x
+                " media="(min-width: 320px)" />
+                <img src="img/index/team/team-desk-2.jpg" alt="Работник компании" />
+              </picture>
+              
               <div class="team__content">
               <h3 class="team__name">Ольга Репина</h3>
               <p lang="en" class="team__prof">Frontend Developer</p>
@@ -277,7 +340,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="img/index/section_4/sectoin4-3.jpg" alt="Работник компании" width="270" height="260" />
+              <picture>
+                <source srcset="
+                  ./img/index/team/team-desk-3.jpg 1x,
+                  ./img/index/team/team-desk-3-2x.jpg 2x
+                " media="(min-width: 1200px)" />
+                <source srcset="
+                  ./img/index/team/team-tab-3.jpg 1x,
+                  ./img/index/team/team-tab-3-2x.jpg 2x
+                " media="(min-width: 768px)" />
+                <source srcset="
+                  ./img/index/team/team-mob-3.jpg 1x,
+                  ./img/index/team/team-mob-3-2x.jpg 2x
+                " media="(min-width: 320px)" />
+                <img src="img/index/team/team-desk-3.jpg" alt="Работник компании" />
+              </picture>
+              
               <div class="team__content">
               <h3 class="team__name">Николай Тарасов</h3>
               <p lang="en" class="team__prof">Marketing</p>
@@ -318,7 +396,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="img/index/section_4/section4-4.jpg" alt="Работник компании" width="270" height="260" />
+              <picture>
+                <source srcset="
+                  ./img/index/team/team-desk-4.jpg 1x,
+                  ./img/index/team/team-desk-4-2x.jpg 2x
+                " media="(min-width: 1200px)" />
+                <source srcset="
+                  ./img/index/team/team-tab-4.jpg 1x,
+                  ./img/index/team/team-tab-4-2x.jpg 2x
+                " media="(min-width: 768px)" />
+                <source srcset="
+                  ./img/index/team/team-mob-4.jpg 1x,
+                  ./img/index/team/team-mob-4-2x.jpg 2x
+                " media="(min-width: 320px)" />
+                <img src="img/index/team/team-desk-4.jpg" alt="Работник компании" />
+              </picture>
+              
               <div class="team__content">
               <h3 class="team__name">Михаил Ермаков</h3>
               <p lang="en" class="team__prof">UI Designer</p>
