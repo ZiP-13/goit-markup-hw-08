@@ -101,6 +101,9 @@
   margin-bottom: 30px;
   text-align: center;
   justify-content: center;
+  @media screen and (max-width: 445px) {
+    display: inline-block;
+  }
 }
 .checkbox__input {
   position: absolute;
