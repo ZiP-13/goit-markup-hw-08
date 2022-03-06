@@ -844,6 +844,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;
